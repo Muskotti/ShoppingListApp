@@ -6,9 +6,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>fi.tamk.tiko.projekti.gui</groupId>
-    <artifactId>gui</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>Gui</name>
+    <artifactId>GUI</artifactId>
+    <version>V1</version>
+    <name>GUI</name>
     <url>http://maven.apache.org</url>
     <packaging>jar</packaging>
     <dependencies>

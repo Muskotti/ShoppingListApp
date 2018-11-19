@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>fi.tamk.tiko.projekti</groupId>
     <artifactId>Project</artifactId>
-    <name>Gui</name>
+    <name>ShoppingListApp</name>
     <packaging>pom</packaging>
     <version>V1</version>
     <url>http://maven.apache.org</url>
@@ -11,6 +11,13 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>11</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     <modules>

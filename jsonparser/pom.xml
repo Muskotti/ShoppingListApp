@@ -6,9 +6,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>fi.tamk.tiko.projekti.jsonparser</groupId>
-    <artifactId>jsonparser</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>jsonparser</name>
+    <artifactId>JsonParser</artifactId>
+    <version>V1</version>
+    <name>JsonParser</name>
     <url>http://maven.apache.org</url>
     <packaging>jar</packaging>
     <build>
