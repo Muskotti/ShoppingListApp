@@ -22,12 +22,36 @@ import java.util.ArrayList;
 import java.util.List;
 import java.io.IOException;
 
+/**
+ * Gui for the Shopping list app
+ *
+ * @author Toni Vänttinen (toni.vanttinen@cs.tamk.fi)
+ * @version V1
+ * @since 2018-11-19
+ */
+
 public class Gui extends Application {
 
+    /**
+     * Private list of products in string form that is used to generate the JSON file
+     */
     private List<String> lines = new ArrayList<>();
+
+    /**
+     * Private list of products in Product class form
+     */
     private List<Product> products = new ArrayList<>();
+
+    /**
+     * Json parser tool
+     */
     private JsonParser parser = new JsonParser();
 
+    /**
+     * Start method used to initialize the UI
+     *
+     * @param primaryStage stage where all elements are
+     */
     @Override
     public void start(Stage primaryStage) {
         lines.add(parser.start());
@@ -45,12 +69,24 @@ public class Gui extends Application {
 
     }
 
+    /**
+     * Last method used for debugging
+     */
     @Override
     public void stop() {
         System.out.print("Goodbye");
     }
 
 
+    /**
+     * Generate GridPane for UI
+     *
+     * Generates GridPane to be used in the UI
+     * First part is used to adding unique products in to the JSON file
+     * Next part is used to make the JSON file
+     *
+     * @return GridPane element
+     */
     public GridPane generateGridPane() {
         GridPane tmp = new GridPane();
         // Product text
@@ -122,6 +158,14 @@ public class Gui extends Application {
         return tmp;
     }
 
+    /**
+     *  Generates ToolBar for the UI
+     *
+     *  Generates ToolBar to be used in the UI
+     *  Used to change modes from writing to reading JSON files
+     *
+     * @return ToolBar element
+     */
     public ToolBar generateToolBar() {
         ToolBar tmp = new ToolBar();
 
