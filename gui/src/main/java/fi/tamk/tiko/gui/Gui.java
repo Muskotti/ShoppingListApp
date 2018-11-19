@@ -42,7 +42,7 @@ public class Gui extends Application {
 
     @Override
     public void stop() {
-        System.out.print("TAMA EI TOIMI");
+        System.out.print("Goodbye");
     }
 
 
@@ -54,12 +54,18 @@ public class Gui extends Application {
         // Product input
         TextField name = new TextField();
         GridPane.setConstraints(name,0,1,2,1);
-        // Product text
+        // Product count text
         Text productCount = new Text("How many products");
         GridPane.setConstraints(productCount,0,2,2,1);
-        // Product input
+        // Product count input
         TextField count = new TextField();
         GridPane.setConstraints(count,0,3,2,1);
+        // File text
+        Text fileName = new Text("File name");
+        GridPane.setConstraints(fileName,0,4,2,1);
+        // Files input text
+        TextField fileNameInput = new TextField();
+        GridPane.setConstraints(fileNameInput,0,5,2,1);
         //Defining the Submit button
         Button submit = new Button("Submit");
         submit.setOnAction(new EventHandler<ActionEvent>() {
@@ -71,7 +77,7 @@ public class Gui extends Application {
                 lines.add(tmp.start());
                 lines.add(tmp.writeToJson(pro));
                 lines.add(tmp.end());
-                Path file = Paths.get("the-file-name.txt");
+                Path file = Paths.get(fileNameInput.getText() + ".txt");
                 try {
                     Files.write(file, lines, Charset.forName("UTF-8"));
                 } catch (IOException e) {
@@ -79,7 +85,7 @@ public class Gui extends Application {
                 }
             }
         });
-        GridPane.setConstraints(submit, 0, 4);
+        GridPane.setConstraints(submit, 0, 6);
         //Defining the Clear button
         Button clear = new Button("Clear");
         clear.setOnAction(new EventHandler<ActionEvent>() {
@@ -87,12 +93,13 @@ public class Gui extends Application {
             public void handle(ActionEvent actionEvent) {
                 name.clear();
                 count.clear();
+                fileNameInput.clear();
             }
         });
-        GridPane.setConstraints(clear, 1, 4);
+        GridPane.setConstraints(clear, 1, 6);
         //Adds all to the grid
         tmp.setAlignment(Pos.CENTER);
-        tmp.getChildren().addAll(name,productText,productCount,count,submit,clear);
+        tmp.getChildren().addAll(name,productText,productCount,count,submit,clear,fileName,fileNameInput);
         return tmp;
     }
 
