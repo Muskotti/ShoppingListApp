@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="27464db9-ebaa-43be-a8df-457ffebe13b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/ShoppingListApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingListApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingListApp/asd.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingListApp/gui/src/main/java/fi/tamk/tiko/gui/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingListApp/gui/src/main/java/fi/tamk/tiko/gui/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingListApp/gui/target/the-file-name.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingListApp/the-file-name.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingListApp/gui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingListApp/gui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/gui/target/" />
@@ -77,12 +77,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="138" />
+          <entry key="java" value="351" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="138" />
+          <entry key="JAVA" value="351" />
         </counts>
       </usages-collector>
     </session>
@@ -123,8 +123,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ShoppingListApp/gui/src/main/java/fi/tamk/tiko/gui/Gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+            <state relative-caret-position="264">
+              <caret line="81" column="62" lean-forward="true" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
               <folding>
                 <element signature="e#1251#1252#0" expanded="true" />
                 <element signature="e#1300#1301#0" expanded="true" />
@@ -166,10 +166,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="937" />
-    <option name="y" value="251" />
-    <option name="width" value="974" />
-    <option name="height" value="752" />
+    <option name="x" value="1017" />
+    <option name="width" value="910" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -239,7 +238,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="ter&#9;ACTION&#9;ActivateTerminalToolWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542622401078" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542626409690" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -294,7 +293,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12846482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -388,8 +386,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ShoppingListApp/gui/src/main/java/fi/tamk/tiko/gui/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+        <state relative-caret-position="264">
+          <caret line="81" column="62" lean-forward="true" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
           <folding>
             <element signature="e#1251#1252#0" expanded="true" />
             <element signature="e#1300#1301#0" expanded="true" />

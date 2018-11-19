@@ -24,8 +24,13 @@ import java.io.IOException;
 
 public class Gui extends Application {
 
+    private List<String> lines = new ArrayList<>();
+    private List<Product> products = new ArrayList<>();
+    private JsonParser parser = new JsonParser();
+
     @Override
     public void start(Stage primaryStage) {
+        lines.add(parser.start());
         primaryStage.setTitle("Gui");
         BorderPane pane = new BorderPane();
         ToolBar bar = generateToolBar();
@@ -62,30 +67,30 @@ public class Gui extends Application {
         GridPane.setConstraints(count,0,3,2,1);
         // File text
         Text fileName = new Text("File name");
-        GridPane.setConstraints(fileName,0,4,2,1);
+        GridPane.setConstraints(fileName,0,5,2,1);
         // Files input text
         TextField fileNameInput = new TextField();
-        GridPane.setConstraints(fileNameInput,0,5,2,1);
+        GridPane.setConstraints(fileNameInput,0,6,2,1);
         //Defining the Submit button
-        Button submit = new Button("Submit");
-        submit.setOnAction(new EventHandler<ActionEvent>() {
+        Button add = new Button("Add");
+        add.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                Product pro = new Product(0,name.getText(),Integer.parseInt(count.getText()));
-                List<String> lines = new ArrayList<>();
-                JsonParser tmp = new JsonParser();
-                lines.add(tmp.start());
-                lines.add(tmp.writeToJson(pro));
-                lines.add(tmp.end());
-                Path file = Paths.get(fileNameInput.getText() + ".txt");
-                try {
-                    Files.write(file, lines, Charset.forName("UTF-8"));
-                } catch (IOException e) {
-                    e.printStackTrace();
+                int productID = 0;
+                if(!products.isEmpty()) {
+                    lines.add(parser.next());
+                    for(int i = 0; i < products.size(); i++) {
+                        productID = products.get(i).getId() + 1;
+                    }
                 }
+                Product pro = new Product(productID,name.getText(),Integer.parseInt(count.getText()));
+                products.add(pro);
+                lines.add(parser.writeToJson(pro));
+                name.clear();
+                count.clear();
             }
         });
-        GridPane.setConstraints(submit, 0, 6);
+        GridPane.setConstraints(add, 0, 4);
         //Defining the Clear button
         Button clear = new Button("Clear");
         clear.setOnAction(new EventHandler<ActionEvent>() {
@@ -96,10 +101,24 @@ public class Gui extends Application {
                 fileNameInput.clear();
             }
         });
-        GridPane.setConstraints(clear, 1, 6);
+        GridPane.setConstraints(clear, 1, 4);
+        Button submit = new Button("Submit");
+        submit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                lines.add(parser.end());
+                Path file = Paths.get(fileNameInput.getText() + ".txt");
+                try {
+                    Files.write(file, lines, Charset.forName("UTF-8"));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        GridPane.setConstraints(submit, 0, 7);
         //Adds all to the grid
         tmp.setAlignment(Pos.CENTER);
-        tmp.getChildren().addAll(name,productText,productCount,count,submit,clear,fileName,fileNameInput);
+        tmp.getChildren().addAll(name,productText,productCount,count,add,clear,fileName,fileNameInput,submit);
         return tmp;
     }
 
