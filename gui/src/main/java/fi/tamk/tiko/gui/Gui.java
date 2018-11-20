@@ -9,7 +9,6 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -53,10 +52,13 @@ public class Gui extends Application {
     private JsonParser parser = new JsonParser();
 
     /**
-     *
+     * Observable list of the items
      */
     private ObservableList<Product> listData = FXCollections.observableArrayList();
 
+    /**
+     * The table view of observed list
+     */
     private TableView productList;
 
     /**
@@ -94,8 +96,8 @@ public class Gui extends Application {
      * Generate GridPane for UI
      *
      * Generates GridPane to be used in the UI
-     * First part is used to adding unique products in to the JSON file
-     * Next part is used to make the JSON file
+     * First part is used make the table view of the added items
+     * Next part is used to adding items to the table and to the JSON file
      *
      * @return GridPane element
      */
@@ -121,8 +123,8 @@ public class Gui extends Application {
     }
 
     /**
-     *
-     * @return
+     * Generates a VBox Gui where items are added
+     * @return Vbox of the items in the tmp VBox
      */
     private VBox generateAddingList() {
         VBox tmp = new VBox();
@@ -169,8 +171,8 @@ public class Gui extends Application {
     }
 
     /**
-     *
-     * @return
+     * Generates Vbox that is used to make files
+     * @return Vbox of the items in the tmp VBox
      */
     private VBox generateFileSubmit() {
         VBox tmp = new VBox();
@@ -197,8 +199,8 @@ public class Gui extends Application {
     }
 
     /**
-     *
-     * @return
+     * Generates the table view of the items
+     * @return TableView of the items in the tmp TableView
      */
     private TableView generateProductList() {
         TableView tmp = new TableView();
