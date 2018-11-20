@@ -4,13 +4,18 @@ import fi.tamk.tiko.jsonparser.JsonParser;
 import fi.tamk.tiko.jsonparser.Product;
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -48,12 +53,20 @@ public class Gui extends Application {
     private JsonParser parser = new JsonParser();
 
     /**
+     *
+     */
+    private ObservableList<Product> listData = FXCollections.observableArrayList();
+
+    private TableView productList;
+
+    /**
      * Start method used to initialize the UI
      *
      * @param primaryStage stage where all elements are
      */
     @Override
     public void start(Stage primaryStage) {
+        System.out.println("Author: Toni Vanttinen");
         lines.add(parser.start());
         primaryStage.setTitle("Gui");
         BorderPane pane = new BorderPane();
@@ -66,7 +79,6 @@ public class Gui extends Application {
         primaryStage.centerOnScreen();
         primaryStage.setOnCloseRequest(e -> Platform.exit());
         primaryStage.show();
-
     }
 
     /**
@@ -88,26 +100,41 @@ public class Gui extends Application {
      * @return GridPane element
      */
     public GridPane generateGridPane() {
+        int tableColumn = 0;
+        int addColumn = 1;
         GridPane tmp = new GridPane();
+        // Generates visible list of items
+        productList = generateProductList();
+        GridPane.setConstraints(productList,tableColumn,0);
+        // Generates product adding list
+        VBox addingList = generateAddingList();
+        GridPane.setConstraints(addingList,addColumn,0);
+        // Vbox of the file submission
+        VBox fileSubmit = generateFileSubmit();
+        GridPane.setConstraints(fileSubmit,tableColumn,1,2,1);
+        //Adds all to the grid
+        tmp.setHgap(10);
+        tmp.setVgap(10);
+        tmp.setAlignment(Pos.CENTER);
+        tmp.getChildren().addAll(productList,addingList,fileSubmit);
+        return tmp;
+    }
+
+    /**
+     *
+     * @return
+     */
+    private VBox generateAddingList() {
+        VBox tmp = new VBox();
         // Product text
-        Text productText = new Text("Give products name");
-        GridPane.setConstraints(productText,0,0,2,1);
+        Text productText = new Text("Give products name:");
         // Product input
         TextField name = new TextField();
-        GridPane.setConstraints(name,0,1,2,1);
         // Product count text
-        Text productCount = new Text("How many products");
-        GridPane.setConstraints(productCount,0,2,2,1);
+        Text productCount = new Text("How many products:");
         // Product count input
         TextField count = new TextField();
-        GridPane.setConstraints(count,0,3,2,1);
-        // File text
-        Text fileName = new Text("File name");
-        GridPane.setConstraints(fileName,0,5,2,1);
-        // Files input text
-        TextField fileNameInput = new TextField();
-        GridPane.setConstraints(fileNameInput,0,6,2,1);
-        //Defining the Submit button
+        //Defining the Add button
         Button add = new Button("Add");
         add.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -121,12 +148,12 @@ public class Gui extends Application {
                 }
                 Product pro = new Product(productID,name.getText(),Integer.parseInt(count.getText()));
                 products.add(pro);
+                listData.add(pro);
                 lines.add(parser.writeToJson(pro));
                 name.clear();
                 count.clear();
             }
         });
-        GridPane.setConstraints(add, 0, 4);
         //Defining the Clear button
         Button clear = new Button("Clear");
         clear.setOnAction(new EventHandler<ActionEvent>() {
@@ -134,10 +161,24 @@ public class Gui extends Application {
             public void handle(ActionEvent actionEvent) {
                 name.clear();
                 count.clear();
-                fileNameInput.clear();
             }
         });
-        GridPane.setConstraints(clear, 1, 4);
+        tmp.setSpacing(10);
+        tmp.getChildren().addAll(productText,name,productCount,count,add,clear);
+        return tmp;
+    }
+
+    /**
+     *
+     * @return
+     */
+    private VBox generateFileSubmit() {
+        VBox tmp = new VBox();
+        // File text
+        Text fileName = new Text("File name:");
+        // Files input text
+        TextField fileNameInput = new TextField();
+        // Submit button
         Button submit = new Button("Submit");
         submit.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -151,10 +192,23 @@ public class Gui extends Application {
                 }
             }
         });
-        GridPane.setConstraints(submit, 0, 7);
-        //Adds all to the grid
-        tmp.setAlignment(Pos.CENTER);
-        tmp.getChildren().addAll(name,productText,productCount,count,add,clear,fileName,fileNameInput,submit);
+        tmp.getChildren().addAll(fileName,fileNameInput,submit);
+        return tmp;
+    }
+
+    /**
+     *
+     * @return
+     */
+    private TableView generateProductList() {
+        TableView tmp = new TableView();
+        TableColumn productName = new TableColumn ("Product name:");
+        TableColumn productCount = new TableColumn("Product count:");
+        productName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        productCount.setCellValueFactory(new PropertyValueFactory<>("count"));
+        tmp.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+        tmp.setItems(listData);
+        tmp.getColumns().addAll(productName,productCount);
         return tmp;
     }
 
