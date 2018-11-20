@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"fi.tamk.tiko.gui","l":"Gui"},{"p":"fi.tamk.tiko.jsonparser","l":"JsonParser"},{"p":"fi.tamk.tiko.jsonparser","l":"JsonParserTest"},{"p":"fi.tamk.tiko.gui","l":"main"},{"p":"fi.tamk.tiko.jsonparser","l":"Product"}]
