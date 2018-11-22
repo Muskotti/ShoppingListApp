@@ -7,11 +7,14 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -51,9 +54,29 @@ public class WriteScene {
     /**
      *
      */
+    private BorderPane pane = new BorderPane();
+
+    /**
+     *
+     */
     private GridPane grid;
 
-    public WriteScene() {
+    /**
+     *
+     */
+    private Stage primaryStage;
+
+    /**
+     *
+     */
+    private Scene CurrentScene;
+
+    /**
+     *
+     */
+    public WriteScene(Stage primaryStage,Scene CurrentScene) {
+        this.primaryStage = primaryStage;
+        this.CurrentScene = CurrentScene;
         lines.add(parser.start());
         grid = generateGridPane();
     }
@@ -184,7 +207,55 @@ public class WriteScene {
      *
      * @return
      */
-    public GridPane getGrid() {
-        return grid;
+    public BorderPane generateBorderPane() {
+        pane = new BorderPane();
+        pane.setTop(generateToolBar());
+        pane.setCenter(grid);
+        return pane;
+    }
+
+    /**
+     *  Generates ToolBar for the UI
+     *
+     *  Generates ToolBar to be used in the UI
+     *  Used to change modes from writing to reading JSON files
+     *
+     * @return ToolBar element
+     */
+    public ToolBar generateToolBar() {
+        ToolBar tmp = new ToolBar();
+
+        Menu menu = new Menu("Modes");
+
+        ToggleGroup modes = new ToggleGroup();
+        RadioMenuItem write = new RadioMenuItem("Write");
+        RadioMenuItem read = new RadioMenuItem("Read");
+        read.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                CurrentScene = makeReadScene();
+                primaryStage.setScene(CurrentScene);
+            }
+        });
+        modes.getToggles().add(write);
+        modes.getToggles().add(read);
+        modes.selectToggle(write);
+
+        menu.getItems().addAll(write,read);
+
+        MenuBar menuBar = new MenuBar(menu);
+        tmp.getItems().addAll(menuBar);
+        return tmp;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Scene makeReadScene() {
+        ReadScene readScene = new ReadScene();
+        BorderPane tmpPane = readScene.generateBorderPane();
+        Scene tmp = new Scene(tmpPane,600,600);
+        return tmp;
     }
 }

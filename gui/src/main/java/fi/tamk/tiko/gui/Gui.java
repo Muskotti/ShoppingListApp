@@ -9,6 +9,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -47,10 +48,6 @@ public class Gui extends Application {
     private Stage primaryStage;
 
     /**
-     *
-     */
-    private BorderPane pane = new BorderPane();;
-    /**
      * Start method used to initialize the UI
      *
      * @param primaryStage stage where all elements are
@@ -59,10 +56,8 @@ public class Gui extends Application {
     public void start(Stage primaryStage) {
         System.out.println("Author: Toni Vanttinen");
         this.primaryStage = primaryStage;
-        ToolBar bar = generateToolBar();
-        pane.setTop(bar);
-        Scene writeScene = makeWriteScene();
-        CurrentScene = writeScene;
+        CurrentScene = makeWriteScene();
+        primaryStage.setScene(this.CurrentScene);
         this.primaryStage.setTitle("Shopping List");
         this.primaryStage.setScene(CurrentScene);
         this.primaryStage.centerOnScreen();
@@ -74,21 +69,10 @@ public class Gui extends Application {
      *
      * @return
      */
-    private Scene makeWriteScene() {
-        WriteScene writeScene = new WriteScene();
-        pane.setCenter(writeScene.getGrid());
-        Scene tmp = new Scene(pane,600,600);
-        return tmp;
-    }
-
-    /**
-     *
-     * @return
-     */
-    private Scene makeReadScene() {
-        ReadScene readScene = new ReadScene();
-        pane.setCenter(readScene.getGrid());
-        Scene tmp = new Scene(pane,600,600);
+    public Scene makeWriteScene() {
+        WriteScene writeScene = new WriteScene(primaryStage,CurrentScene);
+        BorderPane tmpPane = writeScene.generateBorderPane();
+        Scene tmp = new Scene(tmpPane,600,600);
         return tmp;
     }
 
@@ -98,46 +82,5 @@ public class Gui extends Application {
     @Override
     public void stop() {
         System.out.print("Goodbye");
-    }
-
-    /**
-     *  Generates ToolBar for the UI
-     *
-     *  Generates ToolBar to be used in the UI
-     *  Used to change modes from writing to reading JSON files
-     *
-     * @return ToolBar element
-     */
-    public ToolBar generateToolBar() {
-        ToolBar tmp = new ToolBar();
-
-        Menu menu = new Menu("Modes");
-
-        ToggleGroup modes = new ToggleGroup();
-        RadioMenuItem write = new RadioMenuItem("Write");
-        write.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                CurrentScene = makeWriteScene();
-                primaryStage.setScene(CurrentScene);
-            }
-        });
-        RadioMenuItem read = new RadioMenuItem("Read");
-        read.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                CurrentScene = makeReadScene();
-                primaryStage.setScene(CurrentScene);
-            }
-        });
-        modes.getToggles().add(write);
-        modes.getToggles().add(read);
-        modes.selectToggle(write);
-
-        menu.getItems().addAll(write,read);
-
-        MenuBar menuBar = new MenuBar(menu);
-        tmp.getItems().addAll(menuBar);
-        return tmp;
     }
 }
