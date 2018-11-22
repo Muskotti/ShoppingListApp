@@ -253,7 +253,7 @@ public class WriteScene {
      * @return
      */
     public Scene makeReadScene() {
-        ReadScene readScene = new ReadScene();
+        ReadScene readScene = new ReadScene(primaryStage,CurrentScene);
         BorderPane tmpPane = readScene.generateBorderPane();
         Scene tmp = new Scene(tmpPane,600,600);
         return tmp;
