@@ -18,7 +18,6 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ReadScene {
@@ -85,12 +84,11 @@ public class ReadScene {
                 File file = fileChooser.showOpenDialog(primaryStage);
                 if (file != null) {
                     try {
-                        List <Product> proList = new ArrayList<>();
-                        Product pro = reader.readFile(file);
-                        proList.add(pro);
+                        List<Product> proList = reader.readFile(file);
                         for(int i = 0; i < proList.size(); i++){
                             listData.add(proList.get(i));
                         }
+
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
