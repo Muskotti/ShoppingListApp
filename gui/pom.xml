@@ -19,7 +19,7 @@
         </dependency>
         <dependency>
             <groupId>fi.tamk.tiko.projekti.jsonparser</groupId>
-            <artifactId>jsonparser</artifactId>
+            <artifactId>JsonParser</artifactId>
             <version>V1</version>
         </dependency>
     </dependencies>
