@@ -52,27 +52,34 @@ public class WriteScene {
     private JsonParser parser = new JsonParser();
 
     /**
-     *
+     * BorderPane of the overall ui
      */
     private BorderPane pane = new BorderPane();
 
     /**
-     *
+     * A Grid were all of the main stuff is
      */
     private GridPane grid;
 
     /**
-     *
+     * The stage for all of the ui
      */
     private Stage primaryStage;
 
     /**
-     *
+     * the current active scene
      */
     private Scene CurrentScene;
 
     /**
+     * Sets the UI
      *
+     * The stage and scene are set
+     * Start of the parser is given
+     * and the grid is generated
+     *
+     * @param primaryStage
+     * @param CurrentScene
      */
     public WriteScene(Stage primaryStage,Scene CurrentScene) {
         this.primaryStage = primaryStage;
@@ -204,8 +211,8 @@ public class WriteScene {
     }
 
     /**
-     *
-     * @return
+     * Generates the BorderPane
+     * @return the generated BorderPane
      */
     public BorderPane generateBorderPane() {
         pane = new BorderPane();
@@ -249,8 +256,8 @@ public class WriteScene {
     }
 
     /**
-     *
-     * @return
+     * Makes the ReadScene and returns it
+     * @return A ReadScene
      */
     public Scene makeReadScene() {
         ReadScene readScene = new ReadScene(primaryStage,CurrentScene);
