@@ -17,12 +17,12 @@ import javafx.stage.Stage;
 public class Gui extends Application {
 
     /**
-     *
+     * The current scene
      */
     private Scene CurrentScene;
 
     /**
-     *
+     * The Stage
      */
     private Stage primaryStage;
 
@@ -45,8 +45,8 @@ public class Gui extends Application {
     }
 
     /**
-     *
-     * @return
+     * Makes the Writing scene
+     * @return A Writing Scene
      */
     public Scene makeWriteScene() {
         WriteScene writeScene = new WriteScene(primaryStage,CurrentScene);
