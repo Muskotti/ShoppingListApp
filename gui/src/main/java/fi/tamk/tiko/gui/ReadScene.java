@@ -33,33 +33,42 @@ public class ReadScene {
     private TableView productList;
 
     /**
-     *
+     * BorderPane of the overall ui
      */
     private BorderPane pane = new BorderPane();
 
     /**
-     *
+     * The stage for all of the ui
      */
     private Stage primaryStage;
 
     /**
-     *
+     * the current active scene
      */
     private Scene CurrentScene;
 
     /**
-     *
+     * JsonParserReader reads the json files
      */
     private JsonParserReader reader = new JsonParserReader();
 
     /**
-     *
+     * Sets the stage and scene
      */
     public ReadScene(Stage primaryStage,Scene CurrentScene) {
         this.primaryStage = primaryStage;
         this.CurrentScene = CurrentScene;
     }
 
+    /**
+     * Generate GridPane for UI
+     *
+     * Generates GridPane to be used in the UI
+     * First part is used make the table view of the items
+     * Next part is used to selecting the file
+     *
+     * @return GridPane element
+     */
     public GridPane generateGridPane() {
         GridPane tmp = new GridPane();
         productList = generateProductList();
@@ -73,6 +82,13 @@ public class ReadScene {
         return tmp;
     }
 
+    /**
+     * Generates a VBox and adds a button to it
+     *
+     * The Button is used to make a list of the items that are shown in the list
+     *
+     * @return a VBox with a button
+     */
     private VBox generateFileSelect() {
         VBox tmp = new VBox();
         Button Select = new Button("Select a File");
@@ -116,8 +132,8 @@ public class ReadScene {
     }
 
     /**
-     *
-     * @return
+     * Generates the BorderPane
+     * @return the generated BorderPane
      */
     public BorderPane generateBorderPane() {
         pane = new BorderPane();
@@ -127,8 +143,12 @@ public class ReadScene {
     }
 
     /**
+     *  Generates ToolBar for the UI
      *
-     * @return
+     *  Generates ToolBar to be used in the UI
+     *  Used to change modes from writing to reading JSON files
+     *
+     * @return ToolBar element
      */
     public ToolBar generateToolBar() {
         ToolBar tmp = new ToolBar();
@@ -157,8 +177,8 @@ public class ReadScene {
     }
 
     /**
-     *
-     * @return
+     * Makes a WriteScene and returns it
+     * @return a WriteScene
      */
     public Scene makeWriteScene() {
         WriteScene writeScene = new WriteScene(primaryStage,CurrentScene);
