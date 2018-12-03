@@ -54,6 +54,8 @@ public class ReadScene {
 
     /**
      * Sets the stage and scene
+     * @param primaryStage the stage
+     * @param CurrentScene the scene
      */
     public ReadScene(Stage primaryStage,Scene CurrentScene) {
         this.primaryStage = primaryStage;

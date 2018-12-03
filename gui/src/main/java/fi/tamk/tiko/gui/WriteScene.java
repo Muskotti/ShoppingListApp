@@ -78,8 +78,8 @@ public class WriteScene {
      * Start of the parser is given
      * and the grid is generated
      *
-     * @param primaryStage
-     * @param CurrentScene
+     * @param primaryStage the stage
+     * @param CurrentScene the scene
      */
     public WriteScene(Stage primaryStage,Scene CurrentScene) {
         this.primaryStage = primaryStage;
