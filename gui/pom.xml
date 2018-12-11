@@ -2,12 +2,12 @@
     <parent>
         <groupId>fi.tamk.tiko.projekti</groupId>
         <artifactId>Project</artifactId>
-        <version>V1</version>
+        <version>V2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>fi.tamk.tiko.projekti.gui</groupId>
     <artifactId>GUI</artifactId>
-    <version>V1</version>
+    <version>V2</version>
     <name>GUI</name>
     <url>http://maven.apache.org</url>
     <packaging>jar</packaging>
@@ -16,6 +16,11 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>11</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dropbox.core</groupId>
+            <artifactId>dropbox-core-sdk</artifactId>
+            <version>3.0.10</version>
         </dependency>
         <dependency>
             <groupId>fi.tamk.tiko.projekti.jsonparser</groupId>

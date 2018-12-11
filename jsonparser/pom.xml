@@ -2,12 +2,12 @@
     <parent>
         <groupId>fi.tamk.tiko.projekti</groupId>
         <artifactId>Project</artifactId>
-        <version>V1</version>
+        <version>V2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>fi.tamk.tiko.projekti.jsonparser</groupId>
     <artifactId>JsonParser</artifactId>
-    <version>V1</version>
+    <version>V2</version>
     <name>JsonParser</name>
     <url>http://maven.apache.org</url>
     <packaging>jar</packaging>

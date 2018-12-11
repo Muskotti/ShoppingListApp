@@ -4,7 +4,7 @@
     <artifactId>Project</artifactId>
     <name>ShoppingListApp</name>
     <packaging>pom</packaging>
-    <version>V1</version>
+    <version>V2</version>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
@@ -19,6 +19,11 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.dropbox.core</groupId>
+            <artifactId>dropbox-core-sdk</artifactId>
+            <version>3.0.10</version>
+        </dependency>
     </dependencies>
     <modules>
         <module>gui</module>
@@ -32,6 +37,8 @@
                 <version>3.8.0</version>
                 <configuration>
                     <release>11</release>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
             <plugin>

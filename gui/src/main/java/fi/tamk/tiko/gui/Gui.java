@@ -1,5 +1,6 @@
 package fi.tamk.tiko.gui;
 
+import com.dropbox.core.DbxException;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Scene;
@@ -34,6 +35,12 @@ public class Gui extends Application {
     @Override
     public void start(Stage primaryStage) {
         System.out.println("Author: Toni Vanttinen");
+        DropboxSaver saver = new DropboxSaver();
+        try {
+            saver.save();
+        } catch (DbxException e) {
+            e.printStackTrace();
+        }
         this.primaryStage = primaryStage;
         CurrentScene = makeWriteScene();
         primaryStage.setScene(this.CurrentScene);
