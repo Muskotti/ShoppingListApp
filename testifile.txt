@@ -4,23 +4,7 @@
 {
 "id":"0",
 "name":"asd",
-"count":"5"
-}
-
-,
-
-{
-"id":"1",
-"name":"qwe",
-"count":"7"
-}
-
-,
-
-{
-"id":"2",
-"name":"wqererewr",
-"count":"9"
+"count":"6"
 }
 
 ]

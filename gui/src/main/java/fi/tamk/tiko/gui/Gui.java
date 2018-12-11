@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 /**
  * Gui for the Shopping list app
  *
@@ -35,12 +37,6 @@ public class Gui extends Application {
     @Override
     public void start(Stage primaryStage) {
         System.out.println("Author: Toni Vanttinen");
-        DropboxSaver saver = new DropboxSaver();
-        try {
-            saver.save();
-        } catch (DbxException e) {
-            e.printStackTrace();
-        }
         this.primaryStage = primaryStage;
         CurrentScene = makeWriteScene();
         primaryStage.setScene(this.CurrentScene);

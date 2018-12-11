@@ -1,5 +1,6 @@
 package fi.tamk.tiko.gui;
 
+import com.dropbox.core.DbxException;
 import fi.tamk.tiko.jsonparser.JsonParser;
 import fi.tamk.tiko.jsonparser.Product;
 import javafx.collections.FXCollections;
@@ -17,6 +18,8 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -177,7 +180,7 @@ public class WriteScene {
         // Files input text
         TextField fileNameInput = new TextField();
         // Submit button
-        Button submit = new Button("Submit");
+        Button submit = new Button("Save");
         submit.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -190,7 +193,28 @@ public class WriteScene {
                 }
             }
         });
-        tmp.getChildren().addAll(fileName,fileNameInput,submit);
+        // Submit button
+        Button box = new Button("Save to dropbox");
+        box.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                DropboxSaver saver = new DropboxSaver();
+                try {
+                    saver.save(fileNameInput.getText() + ".txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    StringWriter sw = new StringWriter();
+                    e.printStackTrace(new PrintWriter(sw));
+
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setHeaderText("Save the file first!");
+                    alert.showAndWait();
+                } catch (DbxException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        tmp.getChildren().addAll(fileName,fileNameInput,submit,box);
         return tmp;
     }
 
