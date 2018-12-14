@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="GUI" />
         <module name="gui" />
-        <module name="jsonparser" />
         <module name="JsonParser" />
+        <module name="jsonparser" />
         <module name="Project (1) (Project)" />
         <module name="Project (2) (Project)" />
       </profile>

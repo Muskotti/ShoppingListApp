@@ -25,7 +25,8 @@
         <dependency>
             <groupId>fi.tamk.tiko.projekti.jsonparser</groupId>
             <artifactId>JsonParser</artifactId>
-            <version>V1</version>
+            <version>V2</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
     <build>

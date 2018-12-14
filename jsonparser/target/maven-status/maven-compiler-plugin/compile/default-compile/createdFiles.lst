@@ -1,3 +1,4 @@
 fi\tamk\tiko\jsonparser\JsonParser.class
 fi\tamk\tiko\jsonparser\Product.class
+fi\tamk\tiko\jsonparser\DropboxSaver.class
 fi\tamk\tiko\jsonparser\JsonParserReader.class
