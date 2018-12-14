@@ -58,7 +58,7 @@ public class JsonParserReader {
      * @param line A String that is to be cleaned up
      * @return A cleaned up String
      */
-    private String cleanLine(String line) {
+    public String cleanLine(String line) {
         String[] parts = line.split(":");
         String tmpOne = parts[1].replaceAll("\"","");
         String tmpTwo = tmpOne.replace(",","");
