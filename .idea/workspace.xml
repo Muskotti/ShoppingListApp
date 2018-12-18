@@ -1,12 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="27464db9-ebaa-43be-a8df-457ffebe13b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/jsonparser/src/test/java/fi/tamk/tiko/jsonparser/JsonParserReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsonparser/src/test/java/fi/tamk/tiko/jsonparser/JsonParserReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonparser/src/test/java/fi/tamk/tiko/jsonparser/JsonParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsonparser/src/test/java/fi/tamk/tiko/jsonparser/JsonParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allclasses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fi/tamk/tiko/gui/Gui.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/fi/tamk/tiko/gui/Gui.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fi/tamk/tiko/gui/ReadScene.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/fi/tamk/tiko/gui/ReadScene.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fi/tamk/tiko/gui/WriteScene.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/fi/tamk/tiko/gui/WriteScene.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fi/tamk/tiko/gui/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/fi/tamk/tiko/gui/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fi/tamk/tiko/gui/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/fi/tamk/tiko/gui/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fi/tamk/tiko/gui/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/fi/tamk/tiko/gui/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fi/tamk/tiko/jsonparser/JsonParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/fi/tamk/tiko/jsonparser/JsonParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fi/tamk/tiko/jsonparser/JsonParserReader.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/fi/tamk/tiko/jsonparser/JsonParserReader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fi/tamk/tiko/jsonparser/JsonParserTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/fi/tamk/tiko/jsonparser/JsonParserTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fi/tamk/tiko/jsonparser/Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/fi/tamk/tiko/jsonparser/Product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fi/tamk/tiko/jsonparser/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/fi/tamk/tiko/jsonparser/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/fi/tamk/tiko/jsonparser/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/fi/tamk/tiko/jsonparser/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/doc/member-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/doc/package-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/type-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/doc/type-search-index.zip" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/gui/target/" />
@@ -105,14 +137,14 @@
         <counts>
           <entry key="DropboxSaver" value="4" />
           <entry key="class" value="1" />
-          <entry key="java" value="30" />
+          <entry key="java" value="39" />
           <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="34" />
+          <entry key="JAVA" value="43" />
           <entry key="XML" value="9" />
         </counts>
       </usages-collector>
@@ -136,8 +168,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsonparser/src/test/java/fi/tamk/tiko/jsonparser/JsonParserReaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="58" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="58" />
+            <state relative-caret-position="418">
+              <caret line="79" column="22" lean-forward="true" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -145,8 +177,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jsonparser/src/test/java/fi/tamk/tiko/jsonparser/JsonParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="340">
               <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gui/src/main/java/fi/tamk/tiko/gui/Gui.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gui/src/main/java/fi/tamk/tiko/gui/main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -154,8 +204,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsonparser/src/main/java/fi/tamk/tiko/jsonparser/DropboxSaver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="11" selection-start-line="11" selection-end-line="18" selection-end-column="3" />
+            <state relative-caret-position="367">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jsonparser/src/main/java/fi/tamk/tiko/jsonparser/JsonParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-459">
+              <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jsonparser/src/main/java/fi/tamk/tiko/jsonparser/JsonParserReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gui/src/main/java/fi/tamk/tiko/gui/WriteScene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4002">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gui/src/main/java/fi/tamk/tiko/gui/ReadScene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-721">
+              <caret line="103" column="25" lean-forward="true" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -229,8 +321,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,6 +426,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,7 +435,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SearchEverywhereHistoryKey" value="ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;fix do&#9;ACTION&#9;FixDocComment" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545065828118" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545151902456" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -420,10 +512,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28118163" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1401919" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -437,7 +529,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32968238" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32968238" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
@@ -470,13 +562,6 @@
     <entry file="file://$PROJECT_DIR$/ShoppingListApp/jsonparser/pom.xml" />
     <entry file="file://$PROJECT_DIR$/ShoppingListApp/pom.xml" />
     <entry file="file://$PROJECT_DIR$/ShoppingListApp/gui/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/gui/src/main/java/fi/tamk/tiko/gui/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gui/src/main/java/fi/tamk/tiko/gui/DropboxSaver" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/11/javafx-graphics-11-win.jar!/com/sun/javafx/application/PlatformImpl.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -502,11 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gui/src/main/java/fi/tamk/tiko/gui/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="435">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -517,9 +599,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gui/src/main/java/fi/tamk/tiko/gui/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gui/src/main/java/fi/tamk/tiko/gui/WriteScene.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2431">
+        <state relative-caret-position="-4002">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -527,23 +616,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsonparser/src/main/java/fi/tamk/tiko/jsonparser/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsonparser/src/main/java/fi/tamk/tiko/jsonparser/JsonParserReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gui/src/main/java/fi/tamk/tiko/gui/ReadScene.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
+        <state relative-caret-position="-721">
           <caret line="103" column="25" lean-forward="true" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -551,30 +626,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jsonparser/src/main/java/fi/tamk/tiko/jsonparser/DropboxSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsonparser/src/main/java/fi/tamk/tiko/jsonparser/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jsonparser/src/main/java/fi/tamk/tiko/jsonparser/JsonParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
+        <state relative-caret-position="-459">
           <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsonparser/src/main/java/fi/tamk/tiko/jsonparser/DropboxSaver.java">
+    <entry file="file://$PROJECT_DIR$/jsonparser/src/main/java/fi/tamk/tiko/jsonparser/JsonParserReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" selection-start-line="11" selection-end-line="18" selection-end-column="3" />
+        <state relative-caret-position="554">
+          <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jsonparser/src/test/java/fi/tamk/tiko/jsonparser/JsonParserReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="58" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="58" />
+        <state relative-caret-position="418">
+          <caret line="79" column="22" lean-forward="true" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jsonparser/src/test/java/fi/tamk/tiko/jsonparser/JsonParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="340">
           <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
         </state>
       </provider>
